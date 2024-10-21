@@ -1,0 +1,25 @@
+{
+  "name": "artel-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:1": "ts-node 1/index.ts",
+    "start:2": "ts-node 2/index.ts",
+    "start:3": "ts-node 3/index.ts",
+    "dev:1": "nodemon --watch \"1/**/*.ts\" --exec ts-node 1/index.ts",
+    "dev:2": "nodemon --watch \"2/**/*.ts\" --exec ts-node 2/index.ts",
+    "dev:sdk": "nodemon --watch \"3/SDK/**/*.ts\" --exec ts-node 3/SDK/geoIp.sdk.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@nestjs/config": "^3.3.0"
+  }
+}
